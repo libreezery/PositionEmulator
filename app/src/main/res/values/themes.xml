@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.模拟位置" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--        背景颜色-->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <!--        主要配色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <!--        Accent-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--        secondary color-->
+        <item name="colorOnSecondary">#ffffff</item>
+    </style>
+
+    <style name="PopupWindowAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_animation_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_animation_out</item>
+    </style>
+</resources>

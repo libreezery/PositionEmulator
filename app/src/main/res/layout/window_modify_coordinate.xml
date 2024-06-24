@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="350dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加/修改坐标"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="请输入纬度">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:id="@+id/window_modify_position_inputOfLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="请输入经度">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:id="@+id/window_modify_position_inputOfLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/window_modify_position_bottomOfSave"
+            android:layout_marginTop="20dp"
+            android:text="保存坐标"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="0dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/window_modify_position_buttonOfQuit"
+            android:layout_marginTop="10dp"
+            android:text="取消保存"
+            android:textColor="@color/textColorDay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#f3f3f3"
+            android:background="?android:attr/selectableItemBackground"
+            android:elevation="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_add_position_add"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_playlist_add_24"
+        android:title="添加坐标"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_add_position_send"
+        android:icon="@drawable/ic_baseline_send_24"
+        android:title="确定"
+        app:showAsAction="always" />
+</menu>

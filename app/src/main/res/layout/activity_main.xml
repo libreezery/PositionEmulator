@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/main_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:stretchColumns="*"
+            android:padding="20dp">
+
+            <TableRow android:gravity="start">
+
+                <Button
+                    android:id="@+id/main_delete_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="删除标记点"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="deleteAllMarkers"
+                    android:text="删除所有标记点"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="saveMarkers"
+                    android:text="保存标记点"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+
+            <TableRow android:gravity="center">
+
+                <TextView
+                    android:id="@+id/main_speed_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="速度:3秒/段"
+                    tools:ignore="HardcodedText" />
+
+                <SeekBar
+                    android:id="@+id/main_speed_change"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/main_start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startEmulatePosition"
+                android:text="开始模拟位置"
+                tools:ignore="HardcodedText" />
+
+            <TableRow android:gravity="center|start">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clearCoordinate"
+                    android:text="清除坐标库"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/main_not_add_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不添加标记点"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+
+            <TableRow>
+
+                    <EditText
+                        android:id="@+id/main_edit_longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="0123456789."
+                        android:hint="经度"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/main_edit_latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="0123456789."
+                        android:hint="纬度"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        tools:ignore="HardcodedText"
+                        android:inputType="number" />
+
+                    <Button
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="jumpTo"
+                        android:text="跳转" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

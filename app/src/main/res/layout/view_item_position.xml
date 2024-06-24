@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_position_order"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:id="@+id/item_position_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经度"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/item_position_alter"
+                android:layout_width="26dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:tint="#505050"
+                tools:ignore="UseAppTint" />
+
+            <ImageView
+                android:id="@+id/item_position_delete"
+                android:layout_marginStart="10dp"
+                android:layout_width="26dp"
+                android:tint="#505050"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                tools:ignore="UseAppTint" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

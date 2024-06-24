@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "模拟位置"
+
+include(':Orchid')
+project(':Orchid').projectDir = new File('C:/1Data/BREEZE/Development/Carnation/Orchid')

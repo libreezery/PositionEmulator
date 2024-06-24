@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="Location" />
+    <version value="6" />
+    <list>
+        <mapping class="breeze.emulate.position.bean.AppLocationBean" />
+        <mapping class="breeze.emulate.position.bean.CoordinateBean" />
+    </list>
+</litepal>

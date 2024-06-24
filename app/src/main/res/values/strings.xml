@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">模拟位置</string>
+
+    <string name="about_speed">在多定位进行切换时设定切换的时间，通过这个功能可以实现坐标移动，多用于校园跑等功能。</string>
+
+    <string name="explain_real_position">说明:地图真实坐标是国家级机密，市面上所有的地图软件获取当前位置的经纬度与真实的经纬度是有一定偏差的，仅有手机GPS定位才能获取到精确的位置，因此本页面作用于记录手机真实地理位置，方便进行精确模拟定位。</string>
+    <string name="explain">应用启动!\n使用方法:1.先选择好定位方式\n2.启动定位服务\n3.再启动服务定位\n说明:由于经纬度坐标是国家机密，因此地图获取的坐标不是精确坐标，精确坐标仅自己手机可以获取。</string>
+</resources>
